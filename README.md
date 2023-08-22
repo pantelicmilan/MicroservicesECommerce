@@ -57,3 +57,9 @@ and creating orders. An order is created by taking all the products from the sho
 Synchronization of all this data between separate databases is achieved using a publish-subscribe approach, where copies of the necessary data are made from one 
 database to another. This enables data synchronization so that a microservice never directly requests data from another but indirectly, when the microservice 
 needs certain data, it retrieves it from the synchronized database with other microservices.
+
+
+
+
+
+When running in a local environment, change the access credentials for MSSQL and RabbitMQ in appsettings.json in microservices!
