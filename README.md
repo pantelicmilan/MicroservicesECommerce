@@ -7,7 +7,7 @@
   The project consists of 4 microservices and 1 API gateway serving as a reverse proxy for accessing API routes of all 4 microservices. 
   
   # 1.2 Communication between microservices: 
-    Communication between microservices is accomplished through the publish-subscribe approach, with each microservice listening to the necessary queues in Rabbit       MQ based on the type of message they expect to receive. Each microservice has its own separate database, and data synchronization is facilitated through the         publish-subscribe mechanism as well. 
+Communication between microservices is accomplished through the publish-subscribe approach, with each microservice listening to the necessary queues in Rabbit       MQ based on the type of message they expect to receive. Each microservice has its own separate database, and data synchronization is facilitated through the         publish-subscribe mechanism as well. 
   
   # 1.3 Authentication/Authorization:
     Authentication and authorization are handled via JWT tokens, as they enable microservices to verify user identity without having to request validation from an       authentication service each time. Instead, they utilize a secret key, unique to each microservice requiring user identification.
