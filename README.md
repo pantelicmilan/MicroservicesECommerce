@@ -59,7 +59,7 @@ database to another. This enables data synchronization so that a microservice ne
 needs certain data, it retrieves it from the synchronized database with other microservices.
 
 
-
+### Running in local environment:
 
 
 When running in a local environment, change the access credentials for MSSQL and RabbitMQ in appsettings.json in microservices!
