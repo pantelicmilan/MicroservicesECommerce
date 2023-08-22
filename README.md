@@ -62,4 +62,6 @@ needs certain data, it retrieves it from the synchronized database with other mi
 ### Running in local environment:
 
 
-When running in a local environment, change the access credentials for MSSQL and RabbitMQ in appsettings.json in microservices!
+When running in a local environment:
+1. Change the access credentials for MSSQL and RabbitMQ in appsettings.json in microservices!
+2. Add "ImageStorage" folder in "CatalogService" folder
