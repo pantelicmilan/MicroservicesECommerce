@@ -10,7 +10,9 @@
 Communication between microservices is accomplished through the publish-subscribe approach, with each microservice listening to the necessary queues in Rabbit       MQ based on the type of message they expect to receive. Each microservice has its own separate database, and data synchronization is facilitated through the         publish-subscribe mechanism as well. 
   
   # 1.3 Authentication/Authorization:
-Authentication and authorization are handled via JWT tokens, as they enable microservices to verify user identity without having to request validation from an       authentication service each time. Instead, they utilize a secret key, unique to each microservice requiring user identification.
+Authentication and authorization are handled via JWT tokens, as they enable microservices 
+to verify user identity without having to request validation from an authentication service each time. 
+Instead, they utilize a secret key, unique to each microservice requiring user identification.
   
   # 1.4 CORS Policy:
 Each microservice has a CORS policy that allows access only through the API Gateway. 
